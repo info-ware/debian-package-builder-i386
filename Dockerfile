@@ -7,3 +7,6 @@ RUN apt-get install -y libasound2-dev libgles2-mesa-dev
 RUN apt-get install -y gcc-multilib g++-multilib
 RUN apt-get install -y libtool autoconf
 RUN apt-get install -y git
+
+# add ccache to PATH
+ENV PATH /usr/lib/ccache:${PATH}
