@@ -6,7 +6,7 @@ RUN apt-get install -y dh-systemd dh-exec pkg-config libboost-dev
 RUN apt-get install -y libasound2-dev libgles2-mesa-dev 
 RUN apt-get install -y gcc-multilib g++-multilib
 RUN apt-get install -y libtool autoconf
-RUN apt-get install -y git
+RUN apt-get install -y git joe ccache
 
 # add ccache to PATH
 ENV PATH /usr/lib/ccache:${PATH}
